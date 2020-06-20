@@ -1,25 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wAK-b3-4aX">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My Notes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyNotes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fsr-16-Weo">
+                                <rect key="frame" x="20" y="-20" width="374" height="756"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. However, the next evolution in the media value chain will be the rise of decentralized curation – with individual tastemakers building up mass followings and driving enormous consumption by recommending various articles, videos, shows, films, albums, exhibits and so on. While there’s no way to effectively do this at scale today, the transition is long in development. Almost everyone today remixes content they’ve created with 3rd party content (just look at any social feed), reviews and engages in media commentary (ditto) and uses the recommendations of others to decide what to watch, see, listen to or even believe. Similarly, every social graph includes a handful of node users whose endorsements proliferate across the social web. The formalization of this influence will therefore represent both a natural and value-add extension of existing user behavior.
+
+To this end, multimedia curation is and will continue to be pioneered by today’s web influencers: YouTube, Instagram and Twitter celebrities such as Connor Franta or Michelle Phan that have already developed, personal and authentic voices that transcend individual verticals, genres and brands and influence millions. But it is not and will not be confined to these digital influencers alone. “Traditional” celebrities that connect with their audiences on a deep level – a Howard Stern, Taylor Swift, Glenn Beck or Kardashian – are positioned to and in some cases already beginning to dive into curation. Mindy Kaling doesn’t have 6M Twitter followers, two books and her own TV show just because she’s funny, but because her taste, endorsements and perspective resonates.
+
+The template already exists: Martha Stewart and Oprah both built extensive, multi-category empires in the pre-digital era largely based on the power of their stamp of approval. With new distribution technologies, the influencers of today, and maybe Martha herself, will be able to build even more comprehensive empires than ever before, all built on the power of their taste and delivered via inexpensive but massively distributed web infrastructure.
+
+This ability for consumers to tap into specific voices will also be critical as more content and more users come online. Consumer time (or “attention”) doesn’t scale with either the volume or ready availability of content at their disposal. Discovery functions, too, have a maximum. The significance of 1,000 likes, 400 ratings or 3.2M plays is very different with 3B Internet users than it was with 500M. Not only does contextualizing these social cues become impossible, but the demographics of the reviewers continues to change – first in terms of age and income, then geography and culture – making it difficult to understand the personal validity of any crowd based metric. That’s not to say that a product on Amazon with 1,400 reviews and a 3.8 star rating isn’t good – just that the common review mechanisms found across the web mathematically soften taste out to the average. This works a lot of the time, but we tend to have very particular tastes in certain categories – and there is a certain staleness created by narrowing these averages down using look-a-like groups and other algorithmic techniques. Not to mention the fact, that such an approach often lacks the element of serendipity and surprise from discovering something you loved but didn’t expect (especially if you would otherwise have avoided it). As a result, curators both solve a media painpoint and enrich consumption.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="fsr-16-Weo" secondAttribute="bottom" id="GF4-2P-epc"/>
+                            <constraint firstItem="fsr-16-Weo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="I8M-c9-hyu"/>
+                            <constraint firstItem="fsr-16-Weo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jqv-V2-5u8"/>
+                            <constraint firstItem="fsr-16-Weo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Zkn-Ft-edB"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="My Notes" id="rDa-55-kz1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="8mW-Br-dW9">
+                            <connections>
+                                <action selector="hideKB:" destination="BYZ-38-t0r" id="oJS-IS-UPb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myTextView" destination="fsr-16-Weo" id="Y1v-Za-iGK"/>
+                        <outlet property="myTextViewBottomConstraint" destination="GF4-2P-epc" id="uzR-us-Rs4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1276" y="479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vU7-XD-vPZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wAK-b3-4aX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vnA-uK-oWG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="O6e-AG-lPw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikc-70-LDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="479"/>
         </scene>
     </scenes>
 </document>
